@@ -1,0 +1,16 @@
+#include <iostream>
+
+void printGFG(int n) {
+    if (n <= 0) {
+        return;
+    }
+    std::cout << "GFG";
+    printGFG(n - 1);
+}
+
+int main() {
+    int n = 5;  // Number of times to print "GFG"
+    printGFG(n);
+    return 0;
+}
+
